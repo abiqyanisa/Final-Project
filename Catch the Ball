@@ -94,3 +94,24 @@ class Map{
         createCanvas(this.width, this.height)
     }
 }
+
+class Level{ 
+    constructor(currentLevel, latestLevel, maxLevel){
+        this.currentLevel = currentLevel;
+        this.latestLevel = latestLevel;
+        this.maxLevel = maxLevel;
+    }
+
+    setLevel(level){ 
+        this.currentLevel = level; 
+    }
+
+    getCurrentLevel(){ 
+        return this.currentLevel;
+    }
+
+    levelIncreaseLevel(){ 
+        this.currentLevel++;
+    }
+
+}
