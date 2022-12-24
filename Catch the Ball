@@ -47,3 +47,20 @@ class Entity{
         }
     }
 }
+
+class Hero extends Entity{ 
+    constructor(x, y, width, height, s){
+        super(x, y, width, height, s);
+        this.life = 15; 
+    }
+
+    show(){ 
+        fill('#ff0');
+        rect(this.x, this.y, this.width, this.height);
+        noFill();
+    }
+
+    increaseScore(){ 
+        score++;
+    }
+}
