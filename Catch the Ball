@@ -84,3 +84,13 @@ class Monster extends Entity{
     }
 }
 
+class Map{ 
+    constructor(width, height){
+        this.width = width;
+        this.height = height;
+    }
+
+    init(){ 
+        createCanvas(this.width, this.height)
+    }
+}
