@@ -64,3 +64,23 @@ class Hero extends Entity{
         score++;
     }
 }
+
+class Monster extends Entity{ 
+    constructor(x, y, width, height, s){
+        super(x, y, width, height, s);
+        this.color = (random(0,255),random(0,255),random(0,255)); 
+        this.life = 0;
+        this.effect = 0;
+    }
+
+    increseSpeed(){
+      this.s++;
+    }
+
+    show(){ 
+      fill(this.color); 
+      ellipse(this.x, this.y, this.width, this.height); 
+      this.y += this.s;
+    }
+}
+
