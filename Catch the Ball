@@ -10,3 +10,40 @@ function mousePressed(){
         level.setLevel(1);
     }
 }
+
+class Entity{
+    constructor(x, y, width, height, s){
+        this.x = x;
+        this.y = y;
+        this.width = width;
+        this.height = height;
+        this.s = s;
+    }
+
+    attack(){ 
+    }
+
+    moveRight(){
+        if(this.x < 570){    
+          this.x += this.s;
+        }
+    }
+    
+    moveLeft(){
+        if(this.x > 0){
+          this.x -= this.s;
+        }
+    }
+    
+    moveDown(){
+        if(this.y < 575){
+          this.y += this.s;
+        }
+    }
+
+    moveUp(){ 
+        if(this.y > 0){
+          this.y -= this.s;
+        }
+    }
+}
