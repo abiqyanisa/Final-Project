@@ -1,1 +1,12 @@
 
+function mousePressed(){
+	if(layar == 0){
+        layar = 1
+        level.setLevel(1);
+        mapp.init();
+    }else if(layar == 2){
+        layar = 0
+        score = 0;
+        level.setLevel(1);
+    }
+}
